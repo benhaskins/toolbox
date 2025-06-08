@@ -45,11 +45,11 @@ apt-get install --yes \
     docker-ce-cli \
     docker-compose-plugin \
 
-# tidy up again
-apt-get clean
-apt-get autoremove --yes
-
 if [[ -n ${SUDO_USER} ]];
 then
     usermod -a -G docker ${SUDO_USER}
 fi
+
+# tidy up again
+apt-get clean --yes
+apt-get autoclean --yes
