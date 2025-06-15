@@ -9,10 +9,11 @@ chmod +x /tmp/first_boot.sh
 sudo /tmp/first_boot.sh
 ```
 
-## Setup 1Password for Ubuntu
+## Setup Things for Ubuntu
 
 ```bash
-wget --output-document /tmp/setup_1password.sh "https://raw.githubusercontent.com/benhaskins/toolbox/refs/heads/main/setup_1password.sh"
-chmod +x /tmp/setup_1password.sh
-sudo /tmp/setup_1password.sh
+export THING=docker
+wget --output-document /tmp/setup_1password.sh "https://raw.githubusercontent.com/benhaskins/toolbox/refs/heads/main/setup_${THING}.sh"
+chmod +x /tmp/setup_${THING}.sh
+sudo /tmp/setup_${THING}.sh
 ```
