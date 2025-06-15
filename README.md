@@ -1,6 +1,6 @@
 # Setup Toolbox
 
-Ben's minimal machine bootstrap scripts
+Ben's minimal machine (ubuntu/debian) bootstrap scripts
 
 ## First boot
 ```bash
@@ -9,7 +9,7 @@ chmod +x /tmp/first_boot.sh
 sudo /tmp/first_boot.sh
 ```
 
-## Setup Things for Ubuntu
+## Setup Things
 
 ```bash
 export THING=docker
