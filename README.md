@@ -13,7 +13,7 @@ sudo /tmp/first_boot.sh
 
 ```bash
 export THING=docker
-wget --output-document /tmp/setup_1password.sh "https://raw.githubusercontent.com/benhaskins/toolbox/refs/heads/main/setup_${THING}.sh"
+wget --output-document /tmp/setup_${THING}.sh "https://raw.githubusercontent.com/benhaskins/toolbox/refs/heads/main/setup_${THING}.sh"
 chmod +x /tmp/setup_${THING}.sh
 sudo /tmp/setup_${THING}.sh
 ```
